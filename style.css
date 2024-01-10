@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+:root {
+    --card-height: 300px;
+    --card-width: calc(var(--card-height) / 1.5);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #212121;
+    background: url('https://espguitars.co.jp/wp-content/uploads/2018/05/Alexi.png') center/cover no-repeat fixed;
+    background-position: center top;
+}
+
+.card {
+    width: var(--card-width);
+    height: var(--card-height);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0 36px;
+    perspective: 2500px;
+    margin: 0 50px;
+    cursor: pointer;
+}
+
+.cover-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.wrapper {
+    transition: all 0.5s;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.wrapper::before,
+.wrapper::after {
+    content: "";
+    opacity: 0;
+    width: 100%;
+    height: 80px;
+    transition: all 0.5s;
+    position: absolute;
+    left: 0;
+    
+}
+
+.wrapper::before {
+    top: 0;
+    opacity: 0;
+    background-image: linear-gradient(to top, transparent 46%, rgb(12,13,19,0.5) 68%, rgb(12,13,19) 97%);
+}
+
+.wrapper::after {
+    bottom: 0;
+    opacity: 0;
+    background-image: linear-gradient(to bottom, transparent 46%, rgb(12,13,19,0.5) 68%, rgb(12,13,19) 97%);
+}
+
+.title {
+    width: 60%;
+    transition: transform 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.guitar {
+    width: 140%;
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+    transition: all 0.5s;
+}
+
+.card:hover .wrapper {
+    transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+    box-shadow: 0px 35px 32px -8px rgb(0,0,0,0.75);
+}
+
+.card:hover .title {
+    transform: translate3d(0%, -50%, 100px);
+}
+
+.card:hover .wrapper::after,
+.wrapper::before {
+    opacity: 1;
+}
+
+.card:hover .wrapper::after {
+    height: 120px;
+}
+
+.card:hover .wrapper::before {
+    opacity: 1;
+}
+
+.card:hover .guitar {
+    opacity: 1;
+    transform: translate3d(0%, -30%, -100px);
+}
+
+header {
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+
+    text-align: center;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 20px
+}
+
+.header-image {
+    width: 70px;
+    height: 70px;
+    align-self: center;
+}
+
+footer {
+    background-color: rgba(17, 17, 17, 0.6);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: auto;
+    font-size: 14px;
+}
+
+.footer-references p {
+    padding: 6px;
+}
+
+.footer-socials {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-socials a {
+    margin-right: 10px;
+}
+
+.footer a {
+    font-size: 40px;
+}
+
+.footer a:hover {
+    text-decoration: none;
+}
