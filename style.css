@@ -119,7 +119,7 @@ body {
 }
 
 header {
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.9);
     color: white;
 
     text-align: center;
@@ -141,7 +141,7 @@ header {
 }
 
 footer {
-    background-color: rgba(17, 17, 17, 0.6);
+    background-color: rgba(17, 17, 17, 0.8);
     color: white;
     padding: 10px;
     text-align: center;
