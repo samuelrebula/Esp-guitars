@@ -2,58 +2,103 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Alexi Laiho Signature Guitars</title>
         <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.cdnfonts.com/css/norse" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Alexi Laiho | ESP Guitars</title>
     </head>
 
     <body>
-        <header>
-            <img class="header-image" src="https://espguitars.co.jp/common/images/common/logo.svg">
-            <P>Alexi Laiho Signature Guitars</P>
-        </header>
+        <div class="container">
+            <header className="header">
+                <div class="header-image">
+                    <img class="logo-header" src="https://espguitars.co.jp/common/images/common/logo.svg">
+                </div>
+                <div class="header-image">
+                    <p>プロダクツ</br>PRODUCTS</p>
+                    <p>カスタム メイド</br>CUSTOM MADE</P>
+                    <p>ESPについて</br>ABOUT US</p>
+                </div>
+            </header>
 
-        <div class="card">
-            <div class="wrapper">
-                <img class="cover-image" src="./images/AlexiScythe.jpg">
+            <div class="hero">
+                <div class="signature-image">
+                    <img class="signature" src="https://espguitars.co.jp/common/images/products/signatures_logo.png" height="50" width="90">
+                </div>
+                <h1 class="main-text">Alexi Laiho</h1>
+                <h2 class="under-text">BODOM AFTER MIDNIGHT</h2>
+                <div class="signature-image">
+                    <img class="signature" src="https://espguitars.co.jp/wp-content/uploads/2018/05/Alexi-sig.png" height="100" width="100">
+                </div>
+                <p class=secondary-text>Markku Uula Aleksi "Wildchild" Laiho is the front man and lead guitarist for Finnish melodic
+                     death metal masters Bodom After Midnight. Over his more than 20-year long career, Alexi has received
+                      many international accolades including "Best Shredder" and "Best Metal Guitarist" by Guitar World magazine. 
+                      Universally recognized as one of the world’s most extreme guitar virtuosos, 
+                      Alexi can always be counted on to push the limits of what an ESP can do.</p> 
             </div>
-            <img class="title" src="./images/esplogo.png">
-            <img class="guitar" src="./images/EspScythe.png">
         </div>
-        <div class="card">
-            <div class="wrapper">
-                <img class="cover-image" src="./images/AlexiNew.jpg">
-            </div>
-            <img class="title" src="./images/esplogo.png">
-            <img class="guitar" src="./images/EspHexed.png">
-        </div>  
-        <div class="card">
-            <div class="wrapper">
-                <img class="cover-image" src="./images/AlexiPink.jpg">
-            </div>
-            <img class="title" src="./images/esplogo.png">
-            <img class="guitar" src="./images/EspPink.png">
-        </div> 
-        <div class="card">
-            <div class="wrapper">
-                <img class="cover-image" src="./images/AlexiArrow.jpg">
-            </div>
-            <img class="title" src="./images/esplogo.png">
-            <img class="guitar" src="./images/EspArrow.png">
+
+        <div class="card-container-bg">
         </div>
-        
+
+        <div class="card-container">
+            <div class="card-left">
+                <div class="card" onclick="redirectToPage('your_target_page.html')">
+                    <div class="wrapper">
+                        <img class="cover-image" src="./images/AlexiScythe.jpg">
+                    </div>
+                    <img class="title" src="./images/esplogo.png">
+                    <img class="guitar" src="./images/EspScythe.png">
+                </div>
+            </div>
+
+            <div class="card-mid-left">
+                <div class="card" onclick="redirectToPage('your_target_page.html')">
+                    <div class="wrapper">
+                        <img class="cover-image" src="./images/AlexiNew.jpg">
+                    </div>
+                    <img class="title" src="./images/esplogo.png">
+                    <img class="guitar" src="./images/EspHexed.png">
+                </div>  
+            </div>
+
+            <div class="card-mid-right">
+                <div class="card" onclick="redirectToPage('your_target_page.html')">
+                    <div class="wrapper">
+                        <img class="cover-image" src="./images/AlexiPink.jpg">
+                    </div>
+                    <img class="title" src="./images/esplogo.png">
+                    <img class="guitar" src="./images/EspPink.png">
+                </div>
+            </div>
+            
+            <div class="card-right">
+                <div class="card" onclick="redirectToPage('your_target_page.html')">
+                    <div class="wrapper">
+                        <img class="cover-image" src="./images/AlexiArrow.jpg">
+                    </div>
+                    <img class="title" src="./images/esplogo.png">
+                    <img class="guitar" src="./images/EspArrow.png">
+                </div>  
+            </div>
+        </div>
+
         <footer>
+            <div class="footer-text">
+                <p>プロダクツ</br>PRODUCTS</p>
+                <p>カスタム メイド</br>CUSTOM MADE</P>
+                <p>ESPについて</br>ABOUT US</p>
+            </div>
             <div class="footer-references">
                 <p>All rights to ESP Guitars</p>
                 <p>Made for study and in honor of Alexi Laiho.</p>
                 <p>by Samuel Rebula</p>
                 <div class="footer-socials">
                     <a href="https://github.com/samuelrebula" target="_blank" rel="noopener noreferrer">
-                        <i class="fa fa-github" style="font-size: 40px; color: #E5E7EB;"></i>
+                        <i class="fa fa-github" style="font-size: 30px; color: grey;"></i>
                     </a>
                     <a href="https://www.linkedin.com/in/samuel-rebula/" target="_blank" rel="noopener noreferrer">
-                        <i class="fa fa-linkedin-square" style="font-size: 40px; color: #E5E7EB;"></i>
+                        <i class="fa fa-linkedin-square" style="font-size: 30px; color: grey;"></i>
                     </a>
                 </div>
             </div>
