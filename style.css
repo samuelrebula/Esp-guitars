@@ -234,7 +234,7 @@ footer {
 }
 
 .title {
-    width: 70%;
+    width: 40%;
     transition: transform 0.5s;
     display: flex;
     justify-content: center;
